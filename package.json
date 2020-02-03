@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@mapbox/geojson-area": "^0.2.2",
+    "@turf/area": "^6.0.1",
+    "@turf/polygon-smooth": "^5.0.1",
+    "browserify": "^16.5.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mapbox.js": "^3.2.1",
+    "morgan": "~1.9.1",
+    "turf": "^3.0.14",
+    "uglify-js": "^3.7.3"
+  }
+}

@@ -7,6 +7,7 @@ var compression = require("compression");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var dashboard = require("./routes/dashboard");
 
 var app = express();
 // compress all responses
@@ -28,6 +29,7 @@ app.use('/', indexRouter);
   res.sendFile(staticPath + "/angular/index.html");
 });*/
 app.use("/users", usersRouter);
+app.use("/dashboard", dashboard);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

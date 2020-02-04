@@ -2,47 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85548e06-2673-4c0d-84b8-3539f463aeea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Ubuntu/Ubuntu-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dashboard/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dashboard/circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dashboard/img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dashboard/img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dashboard/img_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dashboard/img_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/faces-clipart/pic-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/faces-clipart/pic-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/faces-clipart/pic-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/faces-clipart/pic-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/jsgrid-icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/sprites/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/dashboard/misc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/dashboard/vendor.bundle.base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/materialdesignicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/vendor.bundle.base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.ejs" afterDir="false" />
     </list>

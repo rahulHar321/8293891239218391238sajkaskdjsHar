@@ -156,8 +156,8 @@ fetch("./geojsons", {
                     }).addTo(buildingDots);
                 }
             });
-        let buildingFootprintsLoader = new L.mapbox.featureLayer()
-            .loadURL("data/BuildingFootprints.geojson")
+        let buildingFootprintsLoader = new L.mapbox.featureLayer();
+        buildingFootprintsLoader.loadURL("data/BuildingFootprints.geojson")
             .on('ready', function (e) {
                 this.eachLayer(function (layer) {
                     layer.setStyle({
@@ -168,8 +168,8 @@ fetch("./geojsons", {
                 });
             });
 
-        let farms = new L.mapbox.featureLayer()
-            .loadURL("data/FarmClassification.geojson")
+        let farms = new L.mapbox.featureLayer();
+        farms.loadURL("data/FarmClassification.geojson")
             .on('ready', function (e) {
                 this.eachLayer(function (layer) {
                     layer
@@ -193,6 +193,7 @@ fetch("./geojsons", {
             collapsed: false,
             autoZIndex: true,
         }).addTo(map);
+
         // year slider
         let yearArray = [];
         for (y of years) {

@@ -58,7 +58,7 @@
             <p class="login-box-msg" style="color: red; display: none;" id="userempty">User name cannot be empty</p>
             <p class="login-box-msg" style="color: red; display: none;" id="passwordempty">Password cannot be empty</p>
 
-            <form name="loginform" action="/dashboard" onsubmit="return validateForm()">
+            <form name="loginform" action="/dashboard" onsubmit="return validateForm()" method="post">
                 <div class="input-group mb-3">
                     <input type="test" class="form-control" placeholder="User Name" name="username">
                     <div class="input-group-append">

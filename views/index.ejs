@@ -16,20 +16,51 @@
     <link rel="stylesheet" href="./stylesheets/bootstrap/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        function validateForm() {
+            var name = document.forms["loginform"]["username"].value;
+            var password = document.forms["loginform"]["password"].value;
+            var isValid = true;
+
+            $('#upwrong').hide();
+            $('#userempty').hide();
+            $('#passwordempty').hide();
+
+            if (name === '') {
+                $('#userempty').show();
+                isValid = false;
+            } else if (password === '') {
+                $('#passwordempty').show();
+                isValid = false;
+            } else if (name != 'admin' || password != 'admin') {
+                $('#upwrong').show();
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <img src="./assets/images/logo.png">
+        <img src="./assets/images/login-logo.png">
     </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form action="/dashboard">
+            <p class="login-box-msg" style="color: red; display: none;" id="upwrong">User name or password is wrong</p>
+            <p class="login-box-msg" style="color: red; display: none;" id="userempty">User name cannot be empty</p>
+            <p class="login-box-msg" style="color: red; display: none;" id="passwordempty">Password cannot be empty</p>
+
+            <form name="loginform" action="/dashboard" onsubmit="return validateForm()">
                 <div class="input-group mb-3">
-                    <input type="test" class="form-control" placeholder="User Name">
+                    <input type="test" class="form-control" placeholder="User Name" name="username">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-envelope"></span>
@@ -37,7 +68,7 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>

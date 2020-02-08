@@ -1,99 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin</title>
-    <link rel="stylesheet" href="./stylesheets/bootstrap/vendor.bundle.base.css">
-    <link rel="stylesheet" href="./stylesheets/bootstrap/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harvesting | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .small-box h3 {
+            font-weight: normal !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./stylesheets/bootstrap/adminlte.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./stylesheets/bootstrap/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./stylesheets/bootstrap/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body>
-<div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"/></a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo.png" alt="logo"/></a>
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-stretch">
-        </div>
-    </nav>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-            <ul class="nav">
-                <li class="nav-item nav-profile">
-                    <a href="#" class="nav-link">
-                        <div class="nav-profile-image">
-                            <img src="assets/images/map.png" alt="profile">
-                            <span class="login-status online"></span>
-                            <!--change to offline or busy as needed-->
-                        </div>
-                        <div class="nav-profile-text d-flex flex-column">
-                            <span class="font-weight-bold mb-2">Harvesting</span>
-                            <span class="text-secondary text-small">Map Tool</span>
-                        </div>
-                        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- partial -->
-        <div class="main-panel">
-            <div class="content-wrapper">
-                <div class="row">
-                    <div class="col-md-4 stretch-card grid-margin" style="cursor: pointer;"
-                         onclick="window.location.replace('/map?type=buildings')">
-                        <div class="card bg-gradient-danger card-img-holder text-white">
-                            <div class="card-body">
-                                <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
-                                     alt="circle-image"/>
-                                <h2 class="mb-5">Buildings</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 stretch-card grid-margin" style="cursor: pointer;"
-                         onclick="window.location.replace('/map?type=buildingfootprints')">
-                        <div class="card bg-gradient-info card-img-holder text-white">
-                            <div class="card-body">
-                                <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
-                                     alt="circle-image"/>
-                                <h2 class="mb-5">Building Footprints</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 stretch-card grid-margin" style="cursor: pointer;"
-                         onclick="window.location.replace('/map?type=farms')">
-                        <div class="card bg-gradient-success card-img-holder text-white">
-                            <div class="card-body">
-                                <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
-                                     alt="circle-image"/>
-                                <h2 class="mb-5">Farms</h2>
-                            </div>
-                        </div>
-                    </div>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+        </ul>
+
+        <!-- SEARCH FORM -->
+        <form class="form-inline ml-3">
+            <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
             </div>
-            <!-- content-wrapper ends -->
-            <!-- partial:partials/_footer.html -->
-            <footer class="footer">
-                <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a
-                                href="" target="_blank">Harvesting</a>. All rights reserved.</span>
-                </div>
-            </footer>
-            <!-- partial -->
+        </form>
+
+        <div style="position: absolute; right: 10px">
+            <span style="margin-right: 10px; font-size: 22px;" class="info">admin</span>
+            <span class="image">
+        <img src="assets/images/user.png"
+             style="height: 43px"
+             class="img-circle elevation-2" alt="User Image">
+      </span>
         </div>
-        <!-- main-panel ends -->
+
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+            <img src="assets/images/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">Harvesting</span>
+        </a>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Harvesting</h1>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <!-- Small boxes (Stat box) -->
+                <div class="row">
+                    <div class="col-lg-4 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-success">
+                            <div class="inner" style="height: 130px;">
+                                <h3 style="text-align: center;top: 30px;position: relative;">Agriculture</h3>
+                            </div>
+                            <a href="#" class="small-box-footer">View on Map <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-info">
+                            <div class="inner" style="height: 130px;">
+                                <h3 style="text-align: center;top: 30px;position: relative;">Urban</h3>
+                            </div>
+                            <a href="#" class="small-box-footer">View on Map <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-6">
+                        <!-- small box -->
+                        <div class="small-box" style="background-color: #dba811;">
+                            <div class="inner" style="height: 130px;">
+                                <h3 style="text-align: center;top: 30px;position: relative;color: white;">Ecology</h3>
+                            </div>
+                            <a href="#" class="small-box-footer">View on Map <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
     </div>
-    <!-- page-body-wrapper ends -->
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2019-2020 <b>Harvesting</b>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 1.0.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
 </div>
-<!-- container-scroller -->
-<!-- plugins:js -->
-<script src="../../javascripts/dashboard/vendor.bundle.base.js"></script>
-<!-- endinject -->
-<script src="../../javascripts/dashboard/misc.js"></script>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../javascripts/dashboard/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../../javascripts/dashboard/jquery-ui.min.js"></script>
+<script src="../../javascripts/dashboard/adminlte.js"></script>
 </body>
 </html>
